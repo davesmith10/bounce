@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Icons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="canvas"></canvas>
+        <div id="controls">
+            <div id="sliders">
+                <label>
+                    Spin Speed: <span id="spin-value">0.02</span>
+                    <input type="range" id="spin-slider" min="0" max="0.15" step="0.005" value="0.02">
+                </label>
+            </div>
+            <div id="actions">
+                <button id="freeze-btn">Freeze</button>
+                <button id="drain-btn">Drain</button>
+                <button id="record-btn">Record</button>
+            </div>
+            <div id="buttons"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
